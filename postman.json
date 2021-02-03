@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "ff6f4252-e019-4249-98db-3e0eab3c3782",
+		"name": "OYB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GETINFO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RETURN IDENTITY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/identity/097f4c08981b57396b1c7cea454a3992c948f8a2abb63003c30d18c213b98a6c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"identity",
+						"097f4c08981b57396b1c7cea454a3992c948f8a2abb63003c30d18c213b98a6c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RETURN DATA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/data/097f4c08981b57396b1c7cea454a3992c948f8a2abb63003c30d18c213b98a6c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"data",
+						"097f4c08981b57396b1c7cea454a3992c948f8a2abb63003c30d18c213b98a6c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NOTARIZE DATA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hash\": \"097f4c08981b57396b1c7cea454a3992c948f8a2abb63003c30d18c213b98a6c\",\n    \"data\": \"hello world, again.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/notarize",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notarize"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
